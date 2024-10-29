@@ -1,3 +1,4 @@
-import { supabase } from "./modules/supabase/supabase.js";
+import { carModel } from "./modules/carmodel/car.model.js";
 
-console.log(supabase);
+const car = new carModel();
+console.log(await car.list());
